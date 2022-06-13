@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.page__container{
+    display: flex;
+}
+
+.lnb__nav{
+    border-right: 1px solid #ccc;
+    height: 100vh;
+}
+
+.lnb__nav > ul > li{
+    padding: 10px;
+}
