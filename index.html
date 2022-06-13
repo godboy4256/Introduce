@@ -5,40 +5,326 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SJW Front-End</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+     />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/top.home.css">
+    <link rel="stylesheet" href="css/about.me.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/career.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/skills.css">
 </head>
 <body>
-    <div class="page__container">
-        <nav class="lnb__nav">
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Carrier</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Project</a></li>
-            </ul>
-        </nav>
-        <div class="page__wrapper"> 
-            <section class="top__home">
-                안녕하세요. 도전하는 프론트엔드 개발자 석지웅입니다.
-            </section>
-            <section class="about__me">
-                안녕하세요. 도전하는 프론트엔드 개발자 석지웅입니다.
-            </section>
-            <section class="contact">
-                안녕하세요. 도전하는 프론트엔드 개발자 석지웅입니다.
-            </section>
-            <section class="skills">
-                안녕하세요. 도전하는 프론트엔드 개발자 석지웅입니다.
-            </section>
-            <section class="carrier">
-                안녕하세요. 도전하는 프론트엔드 개발자 석지웅입니다.
-            </section>
-            <section class="project">
-                안녕하세요. 도전하는 프론트엔드 개발자 석지웅입니다.
-            </section>
+    <header class="header">
+        <div class="header__wrapper">        
+            <h1>
+                <i class="fa-solid fa-address-card"></i>
+                <span>Seok Ji Woong</span>
+            </h1>
+            <nav class="lnb__nav">
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#career">Career</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    
+    </header>
+    <section class="top__home">
+        <canvas id="canvas">
+        </canvas>
+        <div class="top__home__wrapper">
+            <h2>
+                안녕하세요. 도전하는 프론트엔드 개발자 석지웅입니다.
+            </h2>
+            <h3>
+                React, Next. JS, Context API, Emotion, Apollo-Client, Graph QL을 사용하여 웹 개발 팀 프로젝트를 진행한 경험이 있습니다.
+                웹 퍼블리셔로 4개월 동안 근무했고 우연한 기회에 자바스크립트를 공부하게 되었습니다. 자바스크립트로 웹 브라우저를 제어하는 것에 재미를 느껴서 아예 웹 개발 쪽으로 다시 공부를 해보자고 마음먹고 다니던 회사를 퇴사하고 12주 과정 프론트엔드 부트캠프 코드 캠프(22.01.10~22.04.08)를 수강하게 되었고 모든 과정을 수료하였습니다.
+            </h3>
+            <div class="introduce">
+                <div class="profile__image">
+                    <img src="/images/profile01.jpg" alt="프로필 사진"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main__skills contents__section">
+        <h2 class="section__title">MAIN SKILLS</h2>
+        <ul>
+            <li>
+                <img src="/images/skills/react.png" alt="react icon"/>
+                <div>React.js</div>
+            </li>
+            <li>
+                <img src="/images/skills/js.png" alt="js icon"/>
+                <div>Javascript</div>
+            </li>
+            <li>
+                <img src="/images/skills/html.jpg" alt="html icon"/>
+                <div>HTML</div>
+            </li>
+            <li>
+                <img src="/images/skills/css.png" alt="css icon"/>
+                <div>CSS</div>
+            </li>
+            <li>
+                <img src="/images/skills/firebase.png" alt="css icon"/>
+                <div>Firebase</div>
+            </li>
+            <li>
+                <img src="/images/skills/graphql.png" alt="graphql icon"/>
+                <div>graphql</div>
+            </li>
+            <li>
+                <img src="/images/skills/rest.jpg" alt="rest icon"/>
+                <div>Rest API</div>
+            </li>
+        </ul>
+    </section>
+</section>
+    <section id="about" class="about__me contents__section">
+        <h2 class="section__title">ABOUT ME</h2>
+        <div class="about__me__wrapper">
+            <div class="about__me__content">
+                <h3>👊 현재에 안주하지 않고 끊임없이 다음 단계를 찾습니다.</h3>
+                <p>
+                    끊임없이 무한하게 성장할 수 있는 서비스를 구축하고 싶습니다. 
+                </p>
+                <p>
+                    인터넷에서 어떤 게시글을 읽고 웹 퍼블리셔에 대해 관심을 생겨서 전문 교육 기관에서 6개월 동안 교육을 받았습니다. 교육 기간의 마지막 2개월은 기업에 입사지원을 할 때 제출할 포트폴리오를 만들어야 하는 기간이 주어졌는데 2개월 동안 완성된 포트폴리오에 만족하지 못하고 수료후에도 계속 수정하고 또 ,수정하고 필요한 부분들을 더 추가했었던 경험이 있습니다. 그래서 결국 수료후 한 두달이 지나서야 기업에 입사지원을 하기 시작했습니다. 입사 지원했던 회사에서 끊임없이 더 예쁘게 더 멋지게 UI를 바꾸려고 했던 노력들을 알아봐 주셨고 회사에 합격해서 웹 퍼블리셔 일을 시작할 수 있게 되었습니다.  
+                </p>
+            </div>
+            <div class="about__me__content">
+                <h3>👨🏻‍💻 많은 사람들과 함께 할 수 있는 코드를 지향합니다.</h3>
+                <p>
+                    코드를 작성할 때 협업을 하는 팀원, 그리고 나 자신이 시간이 지나서 해당 코드를 다시 봤을 때 쉽게 이해할 수 있고 제 사용성 있게 작성하려고 합니다.
+                </p>
+                <p>
+                    부트캠프에서 팀 프로젝트를 진행했을 때 기획된 디자인에서 캐 러셀 슬라이드와 인풋 태그, 버튼 태그가 많은 부분에서 사용되고 있음을 발견했습니다. 이를 팀원들이 맡은 각자 페이지에 있는 부분마다 각자가 다른 방식으로 구현할 경우에 비효율적일 것으로 판단했고 이 부분들을 재 사용성 있게 컴포넌트로 만들겠다고 팀원들에게 알리고 해당 부분들을 컴포넌트화했습니다. 그리고 해당 부분이 필요한 페이지에서 팀원들이 제가 만든 컴포넌트를 사용해서 쉽게 구현할 수 있었던 경험이 있습니다.
+                </p>
+            </div>
+            <div class="about__me__content"> 
+                <h3>😄 소통이 즐거워졌습니다.</h3>
+                <p>
+                    저는 낯가림이 심해서 처음 보는 사람들과 소통하는 것과 많은 사람 앞에서 저의 의견을 말하는 것을 어려워했었습니다.
+                </p>
+                <p>
+                    부트 캠프를 진행하면서 모르는 부분을 질문하고 내가 알고 있는 부분들을 동기에게 설명하기도 하면서 이런 부분들이 많이 성장했습니다. 
+                </p>
+                <p>
+                    특히 부트 캠프 교육 과정에는 코드 리뷰 시간이 있었고 하루에 한 명씩 이름순으로 돌아가면서 진행되었습니다. 사실 많은 사람들 앞에서 이야기하는 것을 힘들어하는 저에게는 매우 걱정되는 시간이었습니다. 저는 코드 리뷰 시간을 위해 이상형 월드컵을 구현해보고자 마음먹었고 동물을 주제로 한 이상형 월드컵을 구현해서 코드 리뷰를 시작했습니다. 그리고 이상형 월드컵을 32강, 16강, 8강…. 우승까지 동기들과 함께 재밌게 진행했고 마지막에는 이상형 월드컵을 구현한 코드를 동기들 앞에서 천천히 설명까지 하면서 무사히 코드 리뷰를 마칠 수 있었습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="career" class="career contents__section">
+        <h2 class="section__title">Career</h2>
+        <div class="career__wrapper">
+            <div class="tab">
+                <button id="start__tab" class="tablinks" onclick="openCity(event, 'code__camp')">코드캠프</button>
+                <button class="tablinks" onclick="openCity(event, 'gumi__uni')">구미대학교</button>
+                <button class="tablinks" onclick="openCity(event, 'lcnds')">LCDNS</button>
+                <button class="tablinks" onclick="openCity(event, 'sbsacademy')">SBS 아카데미 컴퓨터 아트학원</button>
+            </div>
+            <div id="code__camp" class="tabcontent">
+                <h3>코드캠프 120% 프론트엔드 코스 과정 수료</h3>
+                <h4>2022 .01 .10 ~ 2022 .04 .08</h4>
+                <ul>
+                    <li>
+                        자바스크립트, 타입스크립트, HTML/CSS, React, Next.js, Graphql 등 프론트엔드 개발에 필요한 주요 스택 학습
+                    </li>
+                    <li>
+                        개인 프로젝트 2회, 팀 프로젝트 1회
+                    </li>
+                    <li>
+                        코드 리뷰, 알고리즘 테스트 과제, 중간 시험 ( 중고 마켓 및 자유게시판 구현하기 )
+                    </li>
+                    <li>
+                        백 엔드 기초 지식 및 GCP 배포, 깃 플로우 학습
+                    </li>
+                </ul>
+          </div>
+          <div id="gumi__uni" class="tabcontent">
+            <h3>구미대학교 전자통신공학전공 졸업 ( 휴학 후 2학기 졸업 )</h3>
+            <h4>2021. 08. 17 ~ 2021-01-27</h4>
+            <ul>
+                <li>
+                    컴퓨터 네트워크
+                </li>
+                <li>
+                    임베디드 실습
+                </li>
+            </ul>
+          </div>
+          <div id="lcnds" class="tabcontent">
+            <h3>웹 에이전시 엘시디엔에스( LCDNS ) 웹 퍼블리셔</h3>
+            <h4>2021 .02 .01 ~ 2021 .06 .31</h4>
+            <ul>
+                <li>
+                    <a href="#">마린 테크 반응형 웹 퍼블리싱 업무</a>
+                </li>
+                <li>
+                    <a href="#">태성 공업 반응형 웹 퍼블리싱 업무</a>
+                </li>
+                <li>
+                    <a href="#">PS&M 반응형 웹 퍼블리싱 업무</a>
+                </li>
+                <li>
+                    <a href="#">파루인쇄전자 반응형 웹 퍼블리싱 업무</a>
+                </li>
+            </ul>
+          </div>
+          <div id="sbsacademy" class="tabcontent">
+            <h3>SBS 컴퓨터 아카데미 아트학원 웹 디자인 / 퍼블리싱 과정 수료</h3>
+            <h4>2020 .06 ~ 2020 .12 .09</h4>
+            <ul>
+                <li>
+                    HTML / CSS 
+                </li>
+                <li>
+                    반응형 웹
+                </li>
+                <li>
+                   JQuery 와 바닐라 JS
+                </li>
+                <li>
+                    웹 모션 ( SVG 와 CANVAS 의 활용 ) 과정
+                </li>
+                <li>
+                    웹 포트폴리오 개인 프로젝트
+                </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <section id="project" class="project contents__section">
+        <h2 class="section__title">Projects</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="description">
+                    <h3>팀 플레이</h3>
+                    <div>
+                        <h4>Skills ( Front-End )</h4>
+                        <ul>
+                            <li>Next.js</li>
+                            <li>Emotion Style Component</li>
+                            <li>Typescript</li>
+                            <li>Graphql</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Description</h4>
+                        <div>
+                            팀 프로젝트가 필요한 경력 없는 주니어 분들을 위한 팀 프로젝트 팀 빌딩 서비스입니다. 기존의 여러가지 사이드 프로젝트 플랫폼이나 스타트 업 창업 멤버를 모집하는 플랫폼이랑 다르게 취업을 위한 팀 프로젝트 포트폴리오가 필요하지만 경력이 없고 팀 프로젝트 경험이 없어서 열심히 독학을 해서 팀 프로젝트에 들어갈 준비가 되어도 같이 할 신입 팀원이 없어서 팀 프로젝트 포트폴리오를 준비하기 힘들었던 분들을 위한 서비스입니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="slide__main__img">
+                    <img src="images/project/project01.png" alt="project01_img"/>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="description">
+                    <h3>위드챗</h3>
+                    <div>
+                        <h4>Skills ( Front-End )</h4>
+                        <ul>
+                            <li>React.js</li>
+                            <li>Emotion Style Component</li>
+                            <li>Typescript</li>
+                            <li>Rest API</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Description</h4>
+                        <div>
+                            프로젝트를 진행하기 위한 회의 소통 서비스입니다. 현재는 채팅 기능만이 구현되어 있지만 추후에 화상 채팅과 음성 채팅 기능을 추가할 예정이고 이 밖에도 svg 이모티콘, 차단, 다양한 기능을 더 추가할 예정입니다. 
+                        </div>
+                    </div>
+                </div>
+                <div class="slide__main__img">
+                    <img src="images/project/project02.png" alt="project02_img"/>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="description">
+                    <h3>동물 이상형 월드컵</h3>
+                    <div>
+                        <h4>Skills</h4>
+                        <ul>
+                            <li>Next.js</li>
+                            <li>Emotion Style Component</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Description</h4>
+                        <div>
+                            코딩 부트 캠프를 수강할 당시에 수업 과정 중에는 하루에 한번씩 코드 리뷰 시간이 있었습니다. 해당 코드 리뷰의 진행 방식은 이름 순으로 한명 씩 돌아가면서 자신이 수업 내용을 들으면서 구현해 놓았던 코드와 궁금했던 내용, 그 밖의 코드들을 가져와서 해당 코드를 분석하는 시간을 가졌는데 당시에 코드 리뷰 시간을 위해 구현해 두었던 이상형 월드컵입니다.
+                        </div>
+                    </div>
+                </div>
+                <div class="slide__main__img">
+                    <img src="images/project/project03.png" alt="project03_img"/>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+    </section>
+    <section id="contact" class="contact contents__section">
+        <h2 class="section__title">CONTACT</h2>
+        <ul class="contact__list">
+            <li>
+                <a href='tel:010-9019-2172'>
+                    <div class="contact__icon">
+                        <img src="images/contact/phone.png" alt="전화번호" />
+                    </div>
+                    <div>010-9019-2172</div>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:godboy47474@gmail.com">
+                    <div class="contact__icon">
+                        <img src="images/contact/email.png" alt="이메일" />
+                    </div>
+                    <div>godboy47474@gmail.com</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/godboy4256">
+                    <div class="contact__icon">
+                        <img src="images/contact/github.png" alt="깃허브 링크" />
+                    </div>
+                    <div>
+                        GitHub
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://complex-somersault-3fd.notion.site/Ji-Woong-Notion-3e5a27a2634d4e839ac188f4070bfc9e">
+                    <div class="contact__icon">
+                        <img src="images/contact/notion.png" alt="노션 링크" />
+                    </div>
+                    <div>
+                        Notion
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/career.js"></script>
+    <script src="/js/project.js"></script>
+    <script src="/js/top.home.js"></script>
 </body>
 </html>

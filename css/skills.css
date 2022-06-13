@@ -1,0 +1,27 @@
+.main__skills {
+    width: 100%;
+}
+
+.main__skills > ul{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+}
+
+.main__skills > ul > li{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.main__skills > ul > li:last-child{
+    border-bottom: none;
+}
+
+.main__skills > ul > li > img{
+    width: 30px;
+    margin-right: 10px;
+}

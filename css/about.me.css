@@ -1,0 +1,27 @@
+.about__me{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__me__wrapper .about__me__content{
+    margin-bottom: 100px;
+}
+
+.about__me__wrapper .about__me__content h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about__me__wrapper .about__me__content p{
+    font-size: 17px;
+    font-weight: 100;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+
+.about__me__wrapper .about__me__content p:last-child{
+    padding-bottom: 0;
+}
